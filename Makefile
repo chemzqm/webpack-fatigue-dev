@@ -14,7 +14,7 @@ start:
 	@$(BIN_DIR)/webpack-dev-server $(WBP_ENTRY) $(WBP_LOADERS) $(WBP_PATH) $(WBP_FLAGS) $(WBP_PORT)
 
 size:
-	@webpack $(WBP_LOADERS) index.js bundle.js --json | analyze-bundle-size
+	@$(BIN_DIR)/webpack $(WBP_LOADERS) $(WBP_ENTRY) bundle.js --json | webpack-bundle-size-analyzer
 	@rm bundle.js
 
 test:
