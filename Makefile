@@ -11,6 +11,7 @@ P="\\033[34m[+]\\033[0m"
 
 start:
 	@echo "  $(P) starting webpack-dev-server"
+	@chrome http://localhost:3000/bundle
 	@$(BIN_DIR)/webpack-dev-server $(WBP_ENTRY) $(WBP_LOADERS) $(WBP_PATH) $(WBP_FLAGS) $(WBP_PORT)
 
 size:
