@@ -1,6 +1,6 @@
 {
   "name": "webpack-fatigue-dev",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "module for build module with webpack",
   "main": "index.js",
   "keywords": [
@@ -10,6 +10,8 @@
   "author": "chemzqm@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
     "html-loader": "^0.4.3",
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
